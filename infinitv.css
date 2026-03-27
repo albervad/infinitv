@@ -14,12 +14,12 @@
 *                                                                          */
 
 /* Stylesheets */
-@import url('https://cdn.jsdelivr.net/gh/albervad/infinitv@main/prod/infinitv-base.css');
-@import url('https://cdn.jsdelivr.net/gh/albervad/infinitv@main/prod/infinitv-system.css');
-@import url('https://cdn.jsdelivr.net/gh/albervad/infinitv@main/prod/infinitv-pages.css');
-@import url('https://cdn.jsdelivr.net/gh/albervad/infinitv@main/prod/infinitv-sections.css');
-@import url('https://cdn.jsdelivr.net/gh/albervad/infinitv@main/prod/infinitv-cards.css');
-@import url('https://cdn.jsdelivr.net/gh/albervad/infinitv@main/prod/infinitv-player.css');
+@import url('prod/infinitv-base.css');
+@import url('prod/infinitv-system.css');
+@import url('prod/infinitv-pages.css');
+@import url('prod/infinitv-sections.css');
+@import url('prod/infinitv-cards.css');
+@import url('prod/infinitv-player.css');
 
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {

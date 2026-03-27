@@ -45,6 +45,27 @@ Give it your style by changing `:root` values:
 - Give roundings more radius
 - Optional: delay pause-screen overlay with `--pause-screen-delay: 4s`
 
+Example:
+
+```css
+:root {
+  --accent-h: 212;
+  --accent-s: 92%;
+  --accent-l: 56%;
+
+  --bgImage: url("https://www.solidbackgrounds.com/images/1920x1080/1920x1080-black-solid-color-background.jpg");
+
+  --bgdarkness: 0.6;
+  --headeropacity: 0.7;
+  --itemopacity: 0.8;
+
+  --rounding-media: 12px;
+  --rounding-system: 6px;
+
+  --pause-screen-delay: 4s;
+}
+```
+
 ## Optimal Results
 
 - [Jellyfin Desktop v2.0.0](https://github.com/jellyfin/jellyfin-desktop/releases)
