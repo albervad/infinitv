@@ -9,6 +9,12 @@
     display: none;
 }
 
+/* Player OSD: show fullscreen button on desktop */
+.layout-desktop .btnFullscreen,
+.layout-desktop .btnToggleFullscreen {
+    display: inline-flex !important;
+}
+
 /* Player OSD: keep end-time visible on TV/mobile */
 .layout-tv .videoOsdBottom .endsAtText,
 .layout-mobile .videoOsdBottom .endsAtText {
@@ -95,13 +101,14 @@
 }
 
 /* OSD Footer: Small Box-Layout */
-@media all and (min-width: 75em) {
-    .videoOsdBottom {
+@media all and (min-width: 60em) {
+    .layout-desktop .videoOsdBottom {
         padding-top: .5em;
         padding-bottom: 1em;
         margin-bottom: 2em;
-        margin-left: 16vw;
-        margin-right: 16vw;
+        width: min(94vw, 1700px);
+        margin-left: auto;
+        margin-right: auto;
         border-radius: var(--rounding-media);
     }
 }

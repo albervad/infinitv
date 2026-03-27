@@ -25,15 +25,3 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); body, h1, h2, h3, h4 {
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
-
-/* Player: force fullscreen button visible (cache-safe override) */
-.layout-desktop .videoOsdBottom .btnFullscreen,
-.layout-desktop .videoOsdBottom .btnToggleFullscreen,
-.layout-desktop .videoOsdBottom .paper-icon-button-light[data-action="fullscreen"],
-.layout-desktop .videoOsdBottom .paper-icon-button-light[title*="Full"],
-.layout-desktop .videoOsdBottom .paper-icon-button-light[aria-label*="Full"],
-.layout-desktop .videoOsdBottom .paper-icon-button-light[aria-label*="pantalla"] {
-    display: inline-flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-}
