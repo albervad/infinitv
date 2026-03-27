@@ -54,6 +54,21 @@
     margin: 1em;
 }
 
+/* Pause Screen: delay visual appearance (does not change client timer) */
+#pause-screen-overlay {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .35s ease;
+    transition-delay: 0s;
+}
+
+html.pause-screen-active #pause-screen-overlay,
+body.pause-screen-active #pause-screen-overlay {
+    opacity: 1;
+    pointer-events: auto;
+    transition-delay: var(--pause-screen-delay, 4s);
+}
+
 /*
 ============================================================================
    Menu Drawer

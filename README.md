@@ -31,28 +31,8 @@ Give it a try!
 Add the following to your custom branding
 
 ```css
-/* Keep all @import lines at the top (before :root) */
-@import url('https://cdn.jsdelivr.net/gh/albervad/infinitv@c613f98/infinitv.css');
-@import url('https://cdn.jsdelivr.net/gh/albervad/infinitv@c613f98/infinitv-mobile.css');
-:root {
-
-  /* Accent Color */
-  --accent-h: 212;       /* Hue: Blue */
-  --accent-s: 92%;       /* Saturation */
-  --accent-l: 56%;       /* Brightness */
-
-  /* Background Image */
-  --bgImage: url("https://upload.wikimedia.org/wikipedia/commons/3/3f/Fronalpstock_big.jpg");
-
-  /* Darkness & Opacity */
-  --bgdarkness:    0.6;  /* Background Darkness */
-  --headeropacity: 0.7;  /* Header & Drawer Opacity */
-  --itemopacity:   0.8;  /* Item Opacity (Card Footer, Detail Ribbon) */
-
-  /* Roundings */
-  --rounding-media: 12px;
-  --rounding-system: 6px;
-}
+@import url('https://cdn.jsdelivr.net/gh/albervad/infinitv@main/infinitv.css');
+@import url('https://cdn.jsdelivr.net/gh/albervad/infinitv@main/infinitv-mobile.css');
 ```
 
 ## Customize
@@ -63,6 +43,7 @@ Give it your style by changing `:root` values:
 - Set background darkness from `0.00` to `1.00`
 - Set opacity from `1.00` to `0.00`
 - Give roundings more radius
+- Optional: delay pause-screen overlay with `--pause-screen-delay: 4s`
 
 ## Optimal Results
 
