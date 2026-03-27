@@ -5,9 +5,39 @@
 */
 
 /* Player OSD: Hide some Elements */
-.btnFullscreen,
 .btnPip {
     display: none;
+}
+
+/* Player OSD: keep fullscreen visible on desktop */
+.layout-desktop .btnFullscreen,
+.layout-desktop .btnToggleFullscreen {
+    display: inline-flex !important;
+}
+
+/* Player OSD: keep desktop controls in a single row */
+.layout-desktop .videoOsdBottom .buttons.focuscontainer-x,
+.layout-desktop .videoOsdBottom .osdControls > .focuscontainer-x {
+    display: flex;
+    flex-wrap: nowrap !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout-desktop .videoOsdBottom .buttons.focuscontainer-x {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+
+.layout-desktop .videoOsdBottom .buttons.focuscontainer-x::-webkit-scrollbar {
+    display: none;
+}
+
+@media all and (max-width: 95em) {
+    .layout-desktop .videoOsdBottom .endsAtText {
+        display: none !important;
+    }
 }
 
 /* Player OSD: keep end-time visible on TV/mobile */
